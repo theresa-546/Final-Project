@@ -1,2 +1,6 @@
 # Final-Project
-Final Project for Drawing on the Web
+**Final Project for Drawing on the Web**
+
+For my final project I would like my theme to be based on the 2000 Hong Kong film, 花樣年華, or its English title *In the Mood for Love*, by Wong Kar-Wai. It is personally one of my favorite films especially due to its cinematography, music, and aesthetic. The film itself is themed around Hong Kong nostalgia. The film has an overlay of red and green colors, which also acts as its main color palette which I think is beautiful and conveys the feeling of melancholy. Through this project I want to be able to showcase the aesthetics of this film the best I can, simply to appreciate it and hopefully convey my enthusiasm for it. I am also hoping that a friend of mine, who also enjoys this film, will enjoy my final project. 
+
+I want the main page to be the title of the film and to look almost exactly how it appears in the film. Then as the user clicks on each of the characters in the film's title, it will take the user to the separate browser pages of each drawing. I am thinking of each individual browser drawing to showcase the scenes that left the biggest impression on me. I am thinking of playing around with the pixel and color channels. I will also create animations in CSS or Javascript to make static frames from the film interactive. As for the interactivity, an animation will play when the user scrolls or hovers over something for some of them.
