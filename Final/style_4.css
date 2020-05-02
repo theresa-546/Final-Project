@@ -1,0 +1,45 @@
+body{
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #C70000;
+}
+
+#container{
+  width: 480px;
+  height: 480px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  perspective: 300px;
+}
+
+.side{
+  width: 100%;
+  height: 100%;
+  transition: opacity 500ms, transform 500ms ease-out;
+}
+
+
+#leftSide{
+  display: flex;
+  flex-direction: column;
+
+}
+
+#rightPic{
+  object-fit: cover;
+  align-content: center;
+  width: 50%;
+
+}
+
+.leftPics{
+  width:100%;
+  height: 80%;
+}
+
+.leftPics:hover{
+  cursor: none;
+}
