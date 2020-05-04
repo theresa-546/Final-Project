@@ -30,7 +30,3 @@ img{
   filter: blur(26px);
   background-blend-mode: luminosity;
   }
-
-#shape:hover{
-  background: #4FAB20;
-}

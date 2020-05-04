@@ -5,11 +5,12 @@ body{
   align-items: center;
   justify-content: space-evenly;
   background: #C70000;
+/*   background: black; */
 }
 
 #container{
-  width: 480px;
-  height: 480px;
+  width: 45%;
+  height: 80%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   perspective: 300px;
@@ -37,7 +38,7 @@ body{
 
 .leftPics{
   width:100%;
-  height: 80%;
+  height: 85%;
 }
 
 .leftPics:hover{

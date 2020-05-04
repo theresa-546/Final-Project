@@ -1,3 +1,4 @@
+//animation
 const shape = document.getElementById("shape");
 let movement = [
   { transform: "translate3d(0px, 370px, 10px) skew(20deg)" },

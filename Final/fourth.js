@@ -4,7 +4,7 @@ const squares = document.querySelectorAll('.leftPics');
 function changeOpacity(event) {
   if (event.target.className == 'leftPics') {
     for (let i = 0; i < squares.length; i++) {
-      squares[i].style.opacity = '0.6';
+      squares[i].style.opacity = '0.5';
     }
     event.target.style.opacity = '1.0';
     event.target.addEventListener('mouseout', resetOpacity, false);
@@ -36,15 +36,12 @@ function coordinates(event) {
   let yPos = event.clientY;
 
   updateRotation(xPos, yPos);
-  //yPosChange(yPos);
 }
 
 function updateRotation(xPos, yPos) {
-  // map horizontal rotation to X position relative to browser width
   let xRotation = 50 - Math.ceil(yPos / yBrowserRatio);
   console.log('X rotation: ' + xRotation);
 
-  // map vertical rotation to Y position relative to browser height
   let yRotation = -50 + Math.ceil(xPos / xBrowserRatio);
   console.log('Y rotation: ' + yRotation);
 
@@ -65,16 +62,11 @@ function updateRotation(xPos, yPos) {
 
 grid.addEventListener('mouseover', updateRotation, false);
 
-function yPosChange(yPos){
-  if (yPos > 0){
-    //change to ___ img
-  } else {
-    //change to __img
-  }
-}
-
 window.addEventListener('load', scaleRatio);
 
 window.addEventListener('resize', scaleRatio);
 
 window.addEventListener('mousemove', coordinates);
+
+var audio = document.getElementById("music");
+audio.volume = 0.2;
