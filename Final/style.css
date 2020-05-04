@@ -1,0 +1,32 @@
+body{
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  jusitfy-content: center;
+  align-items: center;
+  background-color: #C70000;
+}
+
+div{
+  align-items: center;
+  margin: 10px;
+}
+
+#left{
+  width: 50%;
+  color: white;
+}
+
+#right{
+  width: 40%;
+  margin-left: 30px;
+  color: black;
+}
+
+p{
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2em;
+
+
+}
