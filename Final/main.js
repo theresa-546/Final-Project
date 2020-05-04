@@ -16,14 +16,13 @@ window.addEventListener('wheel', function(event)
  if (event.deltaY > 0)
  {
   console.log('scrolling down');
-  // document.getElementById('text').textContent= 'scrolling down';
+
   text.innerHTML = "<span class='englishTitle'>In the Mood for Love</span>";
  }
  else if (event.deltaY < 0)
  {
   console.log('scrolling up');
-  // document.getElementById('text').textContent= "花樣年華";
-  // text.innerHTML = "花樣年華";
+
 
   text.innerHTML =
   '<a href="first.html"><p id="title-1">花</p></a>\

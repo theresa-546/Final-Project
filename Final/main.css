@@ -1,0 +1,64 @@
+body{
+  margin: 0;
+  height: 100vh;
+  /* the red #C70000*/
+  background-color: #C70000;
+  overflow:hidden;
+}
+
+.title{
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.englishTitle{
+  margin:0;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: 'Oswald', sans-serif;
+/*   400 or 500 */
+  font-weight: 500;
+  line-height: 0.9em;
+  color: white;
+  font-size: 17.55em;
+}
+
+p{
+  font-family: 'Noto Sans HK', sans-serif;
+  /* 700 or 900 weight */
+  font-weight: 900;
+  color: white;
+  font-size: 19em;
+}
+
+a{
+  text-decoration: none;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#title-1:hover{
+  color: black;
+}
+
+#title-2:hover{
+  color: black;
+}
+
+#title-3:hover{
+  color: black;
+}
+
+#title-4:hover{
+  color: black;
+}
