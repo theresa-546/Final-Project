@@ -1,17 +1,61 @@
-const shape= document.getElementById('shape');
+const shape = document.getElementById("shape");
 let movement = [
-  {transform: 'translate(0%, 10%)'},
-  {transform: 'translate(1000%, 25%)'}
-
+  { transform: "translate3d(0px, 370px, 10px) skew(20deg)" },
+  { transform: "translate3d(2000px, 25px, 20px) skew(15deg)" }
 ];
 
-let openTiming = {duration: 4500, iterations: Infinity, easing: 'steps(50, end)'};
+let timing = { duration: 5900, iterations: Infinity, easing: "steps(50, end)" };
 
-// with delay
-// let openTiming = {delay: (200), duration: 4500, iterations: Infinity, easing: 'steps(50, end)'};
+let passBy = shape.animate(movement, timing);
 
-let openWindow = shape.animate(
-  movement,
-  openTiming
+//audio
+var audio = document.getElementById("music");
+audio.volume = 0.2;
 
-)
+//color change
+
+const shapeColor = document.getElementById("shape");
+
+let randomColor;
+
+randomColor = () => {
+  let randomNumber = Math.floor(Math.random() * 360);
+  shapeColor.style.backgroundColor = "hsl(" + randomNumber + ", 100%, 50%)";
+};
+
+window.addEventListener("load", randomColor);
+
+
+let hueBrowserRatio;
+let lightnessBrowserRatio;
+
+function colorScale() {
+  let browserWidth = window.innerWidth;
+  let browserHeight = window.innerHeight;
+
+  hueBrowserRatio = browserWidth / 360;
+  lightnessBrowserRatio = browserHeight / 100;
+}
+
+function getPosition(event) {
+  let xPos = event.clientX;
+  let yPos = event.clientY;
+  updateColor(xPos, yPos);
+}
+
+function updateColor(xPos, yPos) {
+  let hue = Math.ceil(xPos / hueBrowserRatio);
+  console.log("Hue: " + hue);
+
+  let lightness = 100 - Math.ceil(yPos / lightnessBrowserRatio);
+  console.log("Lightness: " + lightness);
+
+  shapeColor.style.backgroundColor =
+    "hsl(" + hue + ", 100%, " + lightness + "%)";
+}
+
+window.addEventListener("load", colorScale);
+
+window.addEventListener("resize", colorScale);
+
+window.addEventListener("mousemove", getPosition);
